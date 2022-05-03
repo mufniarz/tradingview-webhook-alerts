@@ -35,6 +35,7 @@ def buy_stock():
     r = requests.post(ORDERS_URL, json=data, headers=HEADERS)
 
     response = json.loads(r.content) 
+    print(response)
 
     return {
         'webhook_message': webhook_message,
@@ -66,6 +67,7 @@ def buy_stock():
     r = requests.post(ORDERS_URL, json=data, headers=HEADERS)
 
     response = json.loads(r.content) 
+    print(response)
 
     return {
         'webhook_message': webhook_message,
